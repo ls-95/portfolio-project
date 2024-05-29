@@ -1,0 +1,71 @@
+:root {
+  --heading-font: "Staatliches", sans-serif;
+  --paragraph-font: "Inter", sans-serif;
+  --black-color: #000;
+  --white-color: #fff;
+  --default-font-size: 18px;
+  --name-font-size: 24px;
+  --resized-default-font-size: 16px;
+  --centered-text: center;
+  --default-font-weight: 400;
+  --bold-font: bold;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar-nav .nav-link {
+  font-family: var(--heading-font);
+  font-size: var(--default-font-size);
+  color: var(--white-color);
+  margin-right: 60px;
+}
+
+.navbar-brand {
+  font-family: var(--heading-font);
+  margin-left: 30px;
+  font-size: var(--name-font-size);
+}
+
+.content {
+  flex: 1;
+  margin-top: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+footer {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  width: 100%;
+  font-family: var(--paragraph-font);
+  font-weight: 100;
+  line-height: 2;
+  padding-bottom: 30px;
+}
+
+footer p a {
+  font-size: var(--name-font-size);
+}
+
+.strong {
+  margin-bottom: 10px;
+  font-family: var(--heading-font);
+  font-size: var(--default-font-size);
+}
