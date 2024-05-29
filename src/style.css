@@ -9,6 +9,7 @@
   --centered-text: center;
   --default-font-weight: 400;
   --bold-font: bold;
+  --paragraph-color: #828282;
 }
 
 html,
@@ -82,6 +83,7 @@ a {
 .homepage-paragraph {
   max-width: 70%;
   font-weight: var(--default-font-weight);
+  color: var(--paragraph-color);
 }
 
 .homepage-column {
@@ -94,6 +96,7 @@ a {
   margin: 150px auto;
   font-size: var(--default-font-size);
   font-weight: var(--default-font-weight);
+  color: var(--paragraph-color);
 }
 
 .text-justified {
