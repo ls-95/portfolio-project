@@ -3,12 +3,14 @@
   --paragraph-font: "Inter", sans-serif;
   --black-color: #000;
   --white-color: #fff;
-  --default-font-size: 18px;
+  --link-font-size: 18px;
+  --default-paragraph-size: 16px;
   --name-font-size: 24px;
-  --resized-default-font-size: 16px;
+  --resized-default-font-size: 14px;
   --centered-text: center;
   --default-font-weight: 400;
   --bold-font: bold;
+  --paragraph-color: #828282;
 }
 
 html,
@@ -27,9 +29,14 @@ nav {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 .navbar-nav .nav-link {
   font-family: var(--heading-font);
-  font-size: var(--default-font-size);
+  font-size: var(--link-font-size);
   color: var(--white-color);
   margin-right: 60px;
 }
@@ -42,12 +49,68 @@ nav {
 
 .content {
   flex: 1;
+  padding: 80px 160px 150px 160px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-top: 70px;
+  font-weight: var(--bold-font);
+  font-family: var(--heading-font);
+}
+
+.intro-description {
+  font-family: var(--paragraph-font);
+  font-weight: var(--default-font-weight);
+  font-size: var(--default-paragraph-size);
+  color: var(--paragraph-color);
+}
+
+.text {
+  font-family: var(--paragraph-font);
+  font-weight: var(--default-font-weight);
+  font-size: var(--default-paragraph-size);
+  padding: 40px 0 0 0;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--paragraph-color);
+}
+
+.text-justified {
+  text-align: justify;
+}
+
+.portrait-image {
+  max-width: 45%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.image-logo {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.first-image {
+  margin-top: 150px;
+}
+
+h4 {
+  font-family: var(--heading-font);
+  font-weight: var(--bold-font);
   margin-top: 100px;
 }
 
-a {
-  text-decoration: none;
-  color: var(--white-color);
+.center {
+  text-align: var(--centered-text);
+}
+
+.skill-logo {
+  max-width: 30%;
+  height: auto;
+  margin-top: 20px;
 }
 
 footer {
@@ -67,5 +130,5 @@ footer p a {
 .strong {
   margin-bottom: 10px;
   font-family: var(--heading-font);
-  font-size: var(--default-font-size);
+  font-size: var(--link-font-size);
 }

@@ -29,6 +29,11 @@ nav {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 .navbar-nav .nav-link {
   font-family: var(--heading-font);
   font-size: var(--link-font-size);
@@ -98,11 +103,6 @@ p {
   font-family: var(--heading-font);
 }
 
-a {
-  text-decoration: none;
-  color: var(--white-color);
-}
-
 .weather-forecast {
   margin-top: 40px;
   padding-top: 40px;
@@ -130,7 +130,7 @@ footer p a {
 
 @media (max-width: 768px) {
   .content {
-    padding: 0 5px 50px 5px !important;
+    padding: 10px 15px 50px 15px !important;
   }
 
   h1 {
