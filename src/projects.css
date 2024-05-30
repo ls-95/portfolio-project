@@ -92,6 +92,9 @@ p {
   font-size: var(--default-paragraph-size);
   color: var(--paragraph-color);
   margin-bottom: 30px;
+}
+
+.paragraph-text {
   padding-top: 30px;
 }
 

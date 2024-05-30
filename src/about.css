@@ -132,3 +132,69 @@ footer p a {
   font-family: var(--heading-font);
   font-size: var(--link-font-size);
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding: 10px 15px 50px 15px !important;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: var(--centered-text);
+  }
+
+  p {
+    font-size: var(--resized-default-font-size);
+    padding: 10px 0 0 0;
+    text-align: var(--centered-text);
+  }
+
+  h2 {
+    font-size: 24px;
+    padding: 0;
+  }
+
+  img,
+  .image-logo {
+    display: none;
+  }
+
+  .row,
+  .col-6,
+  .col-md-2 {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  h4 {
+    margin-top: 10px;
+  }
+
+  .strong {
+    text-align: left;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    padding: 40px 80px 75px 80px;
+  }
+
+  p {
+    font-size: var(--resized-default-font-size);
+  }
+
+  .portrait-image {
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  .image-logo {
+    max-width: 100%;
+    padding-top: 50px;
+  }
+
+  .skill-logo {
+    max-width: 50%;
+  }
+}
