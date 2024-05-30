@@ -119,19 +119,55 @@ footer p a {
     padding: 10px 15px 50px 15px !important;
   }
 
+  .main-content {
+    padding-right: 0 !important;
+  }
+
   h1 {
     font-size: 40px;
     text-align: var(--centered-text);
   }
 
   p {
-    font-size: var(--resized-default-font-size);
+    font-size: var(--resized-default-font-size) !important;
     padding: 10px 0 0 0;
     text-align: var(--centered-text);
+  }
+
+  .contact-info {
+    text-align: left;
+  }
+
+  img,
+  .image-logo {
+    display: none;
+  }
+
+  .row,
+  .col-6,
+  .col-md-2 {
+    display: block !important;
+    width: 100% !important;
+    padding-right: 0 !important;
   }
 
   .strong {
     margin-top: 20px;
     text-align: left;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    padding: 40px 80px 75px 80px;
+  }
+
+  p {
+    font-size: var(--resized-default-font-size);
+  }
+
+  .portrait-photo {
+    max-width: 90%;
+    padding-top: 30px;
   }
 }

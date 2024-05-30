@@ -94,8 +94,17 @@ p {
   margin-bottom: 30px;
 }
 
+.text {
+  padding-top: 30px;
+}
+
 .paragraph-text {
   padding-top: 30px;
+  text-align: center;
+}
+
+.text-justified {
+  text-align: justify;
 }
 
 .button {

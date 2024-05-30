@@ -138,13 +138,17 @@ footer p a {
     padding: 10px 15px 50px 15px !important;
   }
 
+  .main-content {
+    padding-right: 0 !important;
+  }
+
   h1 {
     font-size: 40px;
     text-align: var(--centered-text);
   }
 
   p {
-    font-size: var(--resized-default-font-size);
+    font-size: var(--resized-default-font-size) !important;
     padding: 10px 0 0 0;
     text-align: var(--centered-text);
   }
@@ -164,6 +168,7 @@ footer p a {
   .col-md-2 {
     display: block !important;
     width: 100% !important;
+    padding-right: 0 !important;
   }
 
   h4 {
