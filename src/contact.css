@@ -3,12 +3,14 @@
   --paragraph-font: "Inter", sans-serif;
   --black-color: #000;
   --white-color: #fff;
-  --default-font-size: 18px;
+  --link-font-size: 18px;
+  --default-paragraph-size: 16px;
   --name-font-size: 24px;
-  --resized-default-font-size: 16px;
+  --resized-default-font-size: 14px;
   --centered-text: center;
   --default-font-weight: 400;
   --bold-font: bold;
+  --paragraph-color: #828282;
 }
 
 html,
@@ -29,7 +31,7 @@ nav {
 
 .navbar-nav .nav-link {
   font-family: var(--heading-font);
-  font-size: var(--default-font-size);
+  font-size: var(--link-font-size);
   color: var(--white-color);
   margin-right: 60px;
 }
@@ -40,14 +42,56 @@ nav {
   font-size: var(--name-font-size);
 }
 
-.content {
-  flex: 1;
-  margin-top: 100px;
-}
-
 a {
   text-decoration: none;
   color: var(--white-color);
+}
+
+.content {
+  flex: 1;
+  padding: 80px 160px 150px 160px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-top: 70px;
+  font-weight: var(--bold-font);
+  font-family: var(--heading-font);
+}
+
+.portrait-photo {
+  max-width: 70%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.text {
+  font-family: var(--paragraph-font);
+  font-weight: var(--default-font-weight);
+  font-size: var(--default-paragraph-size);
+  padding: 20px 0 0 0;
+  margin-bottom: 30px;
+  color: var(--paragraph-color);
+  text-align: center;
+}
+
+.text-justified {
+  text-align: justify;
+}
+
+h4 {
+  font-family: var(--heading-font);
+  font-weight: var(--bold-font);
+  padding-top: 40px;
+}
+
+.contact-info {
+  font-family: var(--paragraph-font);
+  font-weight: var(--default-font-weight);
+  font-size: var(--default-paragraph-size);
+  padding: 20px 0 0 0;
+  margin-bottom: 30px;
+  color: var(--paragraph-color);
 }
 
 footer {
@@ -67,5 +111,27 @@ footer p a {
 .strong {
   margin-bottom: 10px;
   font-family: var(--heading-font);
-  font-size: var(--default-font-size);
+  font-size: var(--link-font-size);
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 10px 15px 50px 15px !important;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: var(--centered-text);
+  }
+
+  p {
+    font-size: var(--resized-default-font-size);
+    padding: 10px 0 0 0;
+    text-align: var(--centered-text);
+  }
+
+  .strong {
+    margin-top: 20px;
+    text-align: left;
+  }
 }
